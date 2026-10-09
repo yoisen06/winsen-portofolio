@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" role="img">
-<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f97316"/><stop offset="1" stop-color="#ef4444"/></linearGradient></defs>
-<rect width="800" height="460" fill="#12100f"/><rect width="800" height="460" fill="url(#g)" opacity=".9"/>
-<rect width="800" height="460" fill="#000" opacity=".25"/>
-<rect x="470" y="300" width="250" height="44" rx="8" fill="#fff" opacity="0.22"/><rect x="478" y="248" width="232" height="44" rx="8" fill="#fff" opacity="0.32"/><rect x="486" y="196" width="214" height="44" rx="8" fill="#fff" opacity="0.42000000000000004"/><rect x="494" y="144" width="196" height="44" rx="8" fill="#fff" opacity="0.52"/><rect x="502" y="92" width="178" height="44" rx="8" fill="#fff" opacity="0.62"/><rect x="480" y="46" width="230" height="22" rx="11" fill="#fff" opacity=".35"/><circle cx="690" cy="57" r="9" fill="#fff"/>
-<text x="48" y="352" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="34" fill="#fff">Library Management System</text>
-<text x="48" y="392" font-family="Arial,Helvetica,sans-serif" font-size="20" fill="#ffffffcc">Laravel · group project</text>
-</svg>
