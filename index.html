@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="Portfolio of Winsen Cristiano Sun, a Computer Science student at BINUS University interested in computer vision and web development. Projects, certificates and CV." />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Winsen Cristiano Sun | Portfolio" />
+    <meta property="og:description" content="Computer Science student at BINUS University interested in computer vision and web development. Projects, certificates and CV." />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Winsen Cristiano Sun | Portfolio" />
+    <meta name="twitter:description" content="Computer Science student at BINUS University interested in computer vision and web development. Projects, certificates and CV." />
+
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="assets/fonts/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="assets/images/winsen.webp" as="image" type="image/webp" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
+    <title>Winsen Cristiano Sun | Portfolio</title>
+  </head>
+
+  <body>
+    <script>
+      const theme = localStorage.getItem("theme") || "dark";
+      document.body.classList.add(theme);
+    </script>
+
+    <header class="header">
+      <div class="menu-btn-container">
+        <div class="container">
+          <button type="button" class="menu-btn">menu</button>
+        </div>
+      </div>
+
+      <nav class="nav hidden">
+        <ol class="nav-items">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#about">About</a></li>
+          <li class="nav-item"><a href="#work">My Work</a></li>
+          <li class="nav-item"><a href="#skills">Skills</a></li>
+          <li class="nav-item"><a href="#certificates">Certificates</a></li>
+          <li class="nav-item"><a href="#activities">Activities</a></li>
+          <li class="nav-item"><a href="#contact" data-focused="last-focused">Contact</a></li>
+        </ol>
+      </nav>
+
+      <div class="hero-bg" aria-hidden="true">
+        <span class="orb orb-1"></span>
+        <span class="orb orb-2"></span>
+      </div>
+
+      <div class="container hero">
+        <div class="hero-grid">
+          <div class="header-textbox">
+            <p class="hero-eyebrow reveal" style="--i: 0">
+              <span class="eyebrow-line"></span>
+              BINUS University
+            </p>
+            <h1 class="h1">
+              <span class="greet reveal" style="--i: 1">Hi, I'm</span>
+              <span class="reveal" style="--i: 2"><em class="grad-text">Winsen Cristiano Sun</em></span>
+              <span class="role reveal" style="--i: 3">Computer Science Student</span>
+            </h1>
+            <p class="hero-typed reveal" style="--i: 4">
+              Coursework in <strong id="typed">Computer Vision</strong><span class="caret" aria-hidden="true"></span>
+            </p>
+            <p class="header-text reveal" style="--i: 5">
+              Computer Science student at BINUS University interested in
+              computer vision and web development. I write research papers in
+              IEEE format and build projects with Laravel.
+            </p>
+            <div class="header-btns reveal" style="--i: 6">
+              <a href="#work" class="btn btn-cta">View Projects</a>
+              <a href="assets/Winsen_Cristiano_Sun_CV.pdf" class="btn btn-secondary" download="Winsen_Cristiano_Sun_CV.pdf">Download CV</a>
+            </div>
+            <ul class="hero-meta reveal" style="--i: 7">
+              <li>IEEE paper co-author</li>
+              <li>IELTS 6.5</li>
+              <li>HSK 5</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual">
+            <div class="photo-stage" id="photoStage">
+              <span class="glow glow-a"></span>
+              <span class="glow glow-b"></span>
+              <span class="orbit-ring"></span>
+              <div class="photo-frame">
+                <div class="photo-card">
+                  <img
+                    src="assets/images/winsen.webp"
+                    alt="Portrait of Winsen Cristiano Sun"
+                    width="760"
+                    height="989"
+                    fetchpriority="high"
+                  />
+                </div>
+              </div>
+              <span class="float-chip chip-a">Computer Vision</span>
+              <span class="float-chip chip-b">Laravel</span>
+              <span class="float-chip chip-c">IEEE Paper</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-hint" href="#about" aria-label="Scroll to About section">
+        <span class="mouse"><span class="wheel"></span></span>
+        <span>Scroll</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="about">
+        <div class="container">
+          <h2 class="h2" id="about">About Me</h2>
+          <div class="about-content">
+            <div class="about-text">
+              <p>
+                I'm a Computer Science student at BINUS University. My
+                coursework covers computer vision and deep learning, web
+                development with Laravel, and cloud computing on Google Cloud,
+                and I write research papers in IEEE format.
+              </p>
+              <p>
+                I'm most interested in applying computer vision to practical
+                problems, like helping people check beef freshness, and in
+                building web apps around them. Outside class, I take part in
+                community service, from hydroponic education to tree planting
+                and river cleanliness.
+              </p>
+            </div>
+            <ul class="facts">
+              <li class="card">
+                <span class="fact-label">Education</span>
+                <strong>BINUS University</strong>
+                <span>Computer Science, semester 5</span>
+              </li>
+              <li class="card">
+                <span class="fact-label">Research</span>
+                <strong>Co-author</strong>
+                <span>IEEE-format research paper</span>
+              </li>
+              <li class="card">
+                <span class="fact-label">Languages</span>
+                <strong>IELTS 6.5 · HSK 5</strong>
+                <span>English and Mandarin</span>
+              </li>
+              <li class="card">
+                <span class="fact-label">Community</span>
+                <strong>2024 – 2026</strong>
+                <span>BINUS community service</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="work">
+        <div class="container">
+          <h2 class="h2" id="work">Selected Work</h2>
+          <div class="work-boxes">
+            <div class="work-box">
+              <div class="work-textbox">
+                <p class="work-label">Research paper · Course project</p>
+                <h3 class="h3">Beef Freshness Detection</h3>
+                <div class="work-text">
+                  <p><strong>Problem.</strong> Consumers usually judge beef freshness by eye, which is subjective and often inaccurate.</p>
+                  <p><strong>Solution.</strong> A deep-learning computer vision system for mobile phones that classifies beef as Fresh, Half-Fresh or Spoiled. The team used a dataset of 5,738 images and compared YOLOv5, YOLOv8, YOLOv11 and YOLOv12. YOLOv8 performed best and was converted to TensorFlow Lite for offline use.</p>
+                  <p><strong>My role.</strong> Second author in a team of 4. I worked on the paper writing and data collection.</p>
+                </div>
+                <ol class="work-technologies">
+                  <li>Computer Vision</li>
+                  <li>YOLOv8</li>
+                  <li>TensorFlow Lite</li>
+                </ol>
+                <a class="work-more" href="assets/images/work/beef-paper-full.webp" target="_blank" rel="noopener">View the paper's first page</a>
+                <!-- Add your GitHub repository here, for example:
+                <div class="work-links"><a class="link" href="https://github.com/USERNAME/REPO" target="_blank" rel="noopener">View on GitHub</a></div>
+                -->
+              </div>
+              <picture class="work-img">
+                <img loading="lazy" src="assets/images/work/beef-paper.webp" alt="First page of the IEEE paper showing the title, authors and abstract" width="1123" height="1085" />
+              </picture>
+            </div>
+
+            <div class="work-box">
+              <div class="work-textbox">
+                <p class="work-label">Group project · Web development</p>
+                <h3 class="h3">Library Management System</h3>
+                <div class="work-text">
+                  <p><strong>Problem.</strong> A library needs a way to list its books and help visitors find them quickly.</p>
+                  <p><strong>Solution.</strong> A web application built with Laravel where users can browse, search and open the details of each book.</p>
+                  <p><strong>My role.</strong> I built the search, pagination and book detail pages, and worked with the team through Git, including resolving merge conflicts.</p>
+                </div>
+                <ol class="work-technologies">
+                  <li>Laravel</li>
+                  <li>Blade</li>
+                  <li>Git</li>
+                </ol>
+                <!-- Add your GitHub repository here, for example:
+                <div class="work-links"><a class="link" href="https://github.com/USERNAME/REPO" target="_blank" rel="noopener">View on GitHub</a></div>
+                -->
+              </div>
+              <picture class="work-img">
+                <img loading="lazy" src="assets/images/work/library-catalog.webp" alt="Screenshot of the library catalog page with a search bar and book cards" width="1584" height="756" />
+              </picture>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="skills">
+        <div class="container">
+          <h2 class="h2" id="skills">Skills</h2>
+          <p class="section-note">Tools I have used in projects, plus areas I have studied in coursework.</p>
+          <div class="skill-groups">
+            <div class="card">
+              <h3 class="h4">Web development</h3>
+              <ul class="chips">
+                <li>Laravel</li>
+                <li>PHP</li>
+                <li>Blade</li>
+                <li>Git</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3 class="h4">AI &amp; computer vision</h3>
+              <ul class="chips">
+                <li>Computer vision</li>
+                <li>Deep learning</li>
+                <li>Image data collection</li>
+                <li>Data collection</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3 class="h4">Cloud &amp; databases (coursework)</h3>
+              <ul class="chips">
+                <li>Google Cloud fundamentals</li>
+                <li>Oracle database fundamentals</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3 class="h4">Research &amp; writing</h3>
+              <ul class="chips">
+                <li>IEEE paper writing</li>
+                <li>Research posters (Canva)</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3 class="h4">Languages</h3>
+              <ul class="chips">
+                <li>Indonesian</li>
+                <li>English (IELTS 6.5)</li>
+                <li>Mandarin (HSK 5)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="certificates">
+        <div class="container">
+          <h2 class="h2" id="certificates">Certificates</h2>
+          <ul class="cert-grid">
+            <li class="card">
+              <span class="fact-label">Google Cloud · Jun 2026</span>
+              <h3 class="h4">Cloud Computing Foundations</h3>
+              <p>Foundational cloud concepts on Google Cloud. Issued 9 June 2026.</p>
+            </li>
+            <li class="card">
+              <span class="fact-label">Oracle Dev Gym</span>
+              <h3 class="h4">Databases for Developers: Foundations</h3>
+              <p>Certificate of completion.</p>
+            </li>
+            <li class="card">
+              <span class="fact-label">English</span>
+              <h3 class="h4">IELTS</h3>
+              <p>Score of 6.5.</p>
+            </li>
+            <li class="card">
+              <span class="fact-label">Mandarin</span>
+              <h3 class="h4">HSK Level 5</h3>
+              <p>Chinese proficiency test, level 5.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="activities">
+        <div class="container">
+          <h2 class="h2" id="activities">Community Service</h2>
+          <ol class="activity-list">
+            <li class="activity">
+              <span class="fact-label">Mar 2026</span>
+              <h3 class="h4">Hydroponic education</h3>
+              <p>Education session at Panti Asuhan Maranatha as part of BINUS community service.</p>
+            </li>
+            <li class="activity">
+              <span class="fact-label">Oct 2025</span>
+              <h3 class="h4">Tree planting</h3>
+              <p>Tree planting activity at TAHURA Bandung.</p>
+            </li>
+            <li class="activity">
+              <span class="fact-label">BINUS community service</span>
+              <h3 class="h4">Citarum river cleanliness</h3>
+              <p>A project focused on keeping the Citarum river clean.</p>
+            </li>
+            <li class="activity">
+              <span class="fact-label">BINUS community service</span>
+              <h3 class="h4">Youth Revival Bandung</h3>
+              <p>A case study on Youth Revival Bandung.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <h2 class="h2" id="contact">Get in Touch</h2>
+          <div class="contact-content">
+            <div class="contact-textbox">
+              <p class="contact-text">
+                Feel free to reach out through email or LinkedIn.
+              </p>
+            </div>
+            <div class="contact-panel">
+              <a class="contact-row" href="mailto:winsen.sun@binus.ac.id">
+                <span class="fact-label">Email</span>
+                <strong>winsen.sun@binus.ac.id</strong>
+              </a>
+              <a class="contact-row" href="https://www.linkedin.com/in/winsen-cristiano-sun-86b908321/" target="_blank" rel="noopener">
+                <span class="fact-label">LinkedIn</span>
+                <strong>linkedin.com/in/winsen-cristiano-sun-86b908321</strong>
+              </a>
+              <a class="contact-row" href="assets/Winsen_Cristiano_Sun_CV.pdf" download="Winsen_Cristiano_Sun_CV.pdf">
+                <span class="fact-label">CV</span>
+                <strong>Download CV (PDF)</strong>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <nav>
+            <ol class="footer-links">
+              <li class="footer-link">
+                <a title="LinkedIn" href="https://www.linkedin.com/in/winsen-cristiano-sun-86b908321/" target="_blank" rel="noopener"><img loading="lazy" src="assets/images/social-links/linkedin.svg" alt="LinkedIn" /></a>
+              </li>
+              <li class="footer-link">
+                <a title="Email" href="mailto:winsen.sun@binus.ac.id"><img loading="lazy" src="assets/images/social-links/mail.svg" alt="Email" /></a>
+              </li>
+            </ol>
+          </nav>
+          <p class="footer-text">
+            &copy; <span>2026</span> Winsen Cristiano Sun. Based on a template by
+            <a target="_blank" rel="noopener" href="https://github.com/devsyedmohsin/portfolio-template">Syed Mohsin</a>.
+          </p>
+          <label class="theme-switch" for="theme-switch">
+            <span>Dark Theme</span>
+            <input type="checkbox" id="theme-switch" role="switch" />
+          </label>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
